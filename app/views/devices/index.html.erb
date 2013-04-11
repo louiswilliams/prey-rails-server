@@ -1,0 +1,31 @@
+<h1>Your Devices</h1>
+
+<table class="table table-striped">
+  <tr>
+    <th>Device</th>
+    <th>Name</th>
+    <th>Delay</th>
+    <th>Modules</th>
+    <th>Missing</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @devices.each do |device| %>
+  <tr>
+    <td><%= device.device_id %></td>
+    <td><%= device.name %></td>
+    <td><%= device.delay %></td>
+    <td><%= device.modules %></td>
+    <td><%= device.missing %></td>
+    <td><%= link_to 'Show', device %></td>
+    <td><%= link_to 'Edit', edit_device_path(device) %></td>
+    <td><%= link_to 'Destroy', device, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Device', new_device_path %>

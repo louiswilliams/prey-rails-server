@@ -1,0 +1,27 @@
+<p id="notice"><%= notice %></p>
+
+<h2><%= @device.name %></h2>
+
+<p>
+  <b>ID: </b>
+  <%= @device.device_id %>
+</p>
+
+<p>
+  <b>Delay:</b>
+  <%= @device.delay %>
+</p>
+
+<p>
+  <b>Modules:</b>
+  <%= @device.modules %>
+</p>
+
+<p>
+  <b>Missing:</b>
+  <%= @device.missing %>
+</p>
+
+
+<%= link_to 'Edit', edit_device_path(@device) %> |
+<%= link_to 'Back', devices_path %>

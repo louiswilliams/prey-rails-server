@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  device_id: 1
+  account: 1
+  name: MyString
+  delay: 1
+  modules: MyString
+  missing: false
+
+two:
+  device_id: 1
+  account: 1
+  name: MyString
+  delay: 1
+  modules: MyString
+  missing: false
